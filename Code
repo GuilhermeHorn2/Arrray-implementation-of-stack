@@ -1,0 +1,50 @@
+#include <iostream>
+#include <cmath>
+#include <cstring>
+#include <cstdlib>
+//
+//using std::string
+//
+using namespace std;
+
+#define N 101
+int a[N];
+int top = -1;
+
+void push(int x){
+    if(top == N-1){
+        printf("OVERFLOW");
+        return;
+    }
+    a[top+1] = x;
+}
+
+void pop(){
+    top--;
+}
+
+void first(){
+    printf("%d",a[top]);
+}
+
+int vazio(){
+    if(top == -1){
+        return 1;
+    }
+    else{
+        return 0;
+    }
+}
+
+
+int main(){
+    /*\n*/
+
+
+
+
+
+
+return 0;
+
+}
